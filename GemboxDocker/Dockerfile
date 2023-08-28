@@ -24,10 +24,7 @@ RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list
 RUN apt-get update
 
 # Install font configuration.
-# RUN apt-get install -y fontconfig
-
-RUN apt-get install -y libfontconfig1
-
+RUN apt-get install -y fontconfig
 
 # Install Microsoft TrueType core fonts.
 # RUN apt-get install -y ttf-mscorefonts-installer
