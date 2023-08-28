@@ -67,7 +67,6 @@ public class MiscController : ControllerBase
 
         var stream = new FileStream(pathToFile, FileMode.Open, FileAccess.Read, FileShare.None, bufferSize: 4096, FileOptions.DeleteOnClose);
 
-        /// TODO (SDW) add file for consts
         return File(stream, "application/pdf", Path.GetFileName(pathToFile));
     }
 }
